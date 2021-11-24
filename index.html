@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+		<HEad>
+			<meta charset="utf-8">
+			<script type="text/javascript" src="app.js" defer></script>
+			<link rel="stylesheet" href="style.css">
+			<title>jeuxPendu </title>
+		</HEad>
+	<body>
+		
+			<header> 
+
+				<!--Ici ce trouve l'entete le logo et message de bienvenue -->
+				<nav> 
+				
+					<h1> BINEVENU (E)</h1>
+					
+					<img src="images/dessin-pendu-1.png" alt="LeLogo"  >
+			
+				
+				</nav>
+			</header>	
+			<!-- ici ce trouve le score du joueur -->
+			<div class="affichage">
+				<p class = "compteur">compteur: </p>
+				<p class="LettresTrouve"> lettres trouvées: </p>
+			</div>
+
+			<!--   Imahe dynalique du pendu en fonction de l'evolution du jeux   --> 
+
+			<div class="contener">	
+
+						<div id = "imageP">   
+							<figure>   
+							<img src="images/Hangman-0.png" 	alt="l'immageJeux">
+								<figcaption> <H3> NIVAU:0</H3></figcaption>
+								<p id="message"> </p>
+						</figure>
+						
+						</div>	
+
+				<!--   le champs de saisie et le bouton de validation-->
+						<div id = "champ">  
+							<form >
+								<p> <label for = "SaisiMot" > <h3> Devinez le mot</h3>  </label> <input type = "text" name = "pseudo" id = "SaisiMot" placeholder = "saisie une lettre "  maxlength = "1" size = "40 "  /></p>
+								<input type= "button" value = "VALIDER" />
+							</form>
+						</div>
+			
+			</div>
+
+			<!-- le pieds de page et ses composants -->
+
+	  <div id="footer">  		
+		<footer>
+		<ul>
+			<li>
+				<a href="#">Condition d'utilisation</a>
+			</li>
+			<li>
+				<a href="#">Politique </a>
+			</li>
+			<li> <a href="#">Apropos</a></li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>  &COPY; 2020-2021  </li>
+		</ul>
+				
+		</footer>
+	  </div>	
+
+	</body>
+
+</html>
