@@ -1,27 +1,36 @@
-
+*{
+	box-sizing: content-box;
+}
 body{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+ 
+
 	background-color: rgb(68, 74, 76);
 }
 /* le munu de */
 
 nav{
+	padding: 20px;
 	background-color: rgba(73, 52, 57, 0.698);
-
+	flex-wrap: nowrap;
 	display:flex;
 
 	flex-direction: row;
 
 	
 	/*flex-wrap: nowrap;
-	*/
+*/
 	justify-content:space-between;
 	
-	height: 120px;
+	height: auto;
 	
 
 } /* le text du menu */
 nav h1{
-	text-align: justify;
+
+	letter-spacing: 20px;
 	
 	font-family: fantasy;
 	
@@ -30,46 +39,42 @@ nav h1{
 	font-style: italic;
 	
 }
-  .affichage{
-	 display: flex;
-	 justify-content: space-evenly;
-	 background-color: rgb(36, 179, 200);
-	 font-size: 20px;
-	 font-style:italic;
-	 font-family: 'Times New Roman', Times, serif;
-	 margin-top: 30px;
- }
+  
+ 
 
 	/* le composant chamt saisie et image du pendu */
 .contener{
+	flex-grow: 1;
 	flex-direction: row;
 
-
+	background-color: rgb(155, 141, 141);
 	
 	display: flex;
 	
-	margin-top: 60px;
-	
-	justify-content:space-evenly;
 	height: 700px;
+	box-sizing: border-box;
+	justify-content:space-evenly;
+	
 	align-content:space-around ;
 	
 } 
-/* image du pendu */
-#imageP{
-	
-	margin-bottom: 350px;
 
+/* image du pendu */
+.imageP{
+	/*display: none;*/
+	
+	
+	margin:120px 60px ;
 	border: 3px rgb(146, 146, 158) outset;
 	border-radius: 10px;
 }
 /* champ de saisie du joueur et le bouton de validation
 */
-#champ{
-	
+.champ{
+	inline-size: mi-content;
 	border: 3px rgb(164, 164, 180) inset;
 	border-radius: 10px;
-	flex-direction: row;
+	margin:120px 60px ;
 	
 	display: flex;
 
@@ -77,14 +82,13 @@ nav h1{
 		
 	background-color: rgb(66, 85, 80);
 
-	margin-bottom: 350px;
+	
 	
 
-	justify-content: space-between;
 
 
 }
-
+/*
 .conteneur2 h2{
 
 	justify-content: center;
@@ -94,11 +98,11 @@ nav h1{
 	font-size: 20px;
 
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 h3{
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-style: italic;
-	padding-left: 50px
+	
 
 }
 
@@ -113,8 +117,8 @@ ul{
 	justify-content: space-between;
 }
 li ,a{
-	
-	margin-right: 20px;
+	display:inline-block;
+	margin-right: 0px;
 	
 	font-size: 30px;
 	
@@ -122,29 +126,27 @@ li ,a{
  	
 	text-decoration: none;
 }
-input ,button{
 
-	padding: 18px; 
 
-	margin: 30px;
-}
-
-#footer{
+footer{
 	background-color: rgb(40, 41, 46);
 	
-	padding: 70px;	
+	padding: auto;	
 	
 	display: flex;
 	
 	color: #FFFF;
-	
-	align-items: center;
+	flex-direction: row;
 
 	
-	/*padding-bottom: 30px;*/
 
+	
 	font-family: Arial, Helvetica, sans-serif;
 	
-	justify-content: flex-start;
+	justify-content:space-evenly;
+
+}
+li .disabled{
+	text-align-last: justify;
 
 }
