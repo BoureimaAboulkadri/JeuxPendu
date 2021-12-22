@@ -14,7 +14,7 @@ let word = '';
 let wordMapping = [];
 let choicesMapping = [];
 let scoreCount = 0;
-let maxScore = 8;
+let maxScore = 7;
 
 
 const init = () => {
